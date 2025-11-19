@@ -8,8 +8,8 @@ run when pulling down project
 npm install
 ```
 
-run from project root for simple test cases
+run from project root for simple test cases of all question in the category
 
 ```
-npm test [file name]
+npm test [category]
 ```
