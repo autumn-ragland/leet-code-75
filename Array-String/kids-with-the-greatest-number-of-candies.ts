@@ -4,7 +4,10 @@ Return a boolean array result of length n, where result[i] is true if, after giv
 Note that multiple kids can have the greatest number of candies.
 */
 
-function kidsWithCandies(candies: number[], extraCandies: number): boolean[] {
+export function kidsWithCandies(
+  candies: number[],
+  extraCandies: number
+): boolean[] {
   let maxCandy = candies[0];
   for (let i = 0; i < candies.length; i++) {
     if (candies[i] > maxCandy) {

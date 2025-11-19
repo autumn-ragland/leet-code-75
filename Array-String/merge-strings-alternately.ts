@@ -3,7 +3,7 @@ You are given two strings word1 and word2. Merge the strings by adding letters i
 Return the merged string.
 */
 
-function mergeAlternately(word1: string, word2: string): string {
+export function mergeAlternately(word1: string, word2: string): string {
   let mergedString = "";
   const lengthDiff = word1.length - word2.length;
   if (lengthDiff > 0) {

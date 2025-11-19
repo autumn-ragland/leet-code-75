@@ -4,7 +4,7 @@ The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit int
 You must write an algorithm that runs in O(n) time and without using the division operation.
 */
 
-function productExceptSelf(nums: number[]): number[] {
+export function productExceptSelf(nums: number[]): number[] {
   const answer = [];
   let forwardPlaceholder = 1;
   for (let i = 0; i < nums.length; i++) {
