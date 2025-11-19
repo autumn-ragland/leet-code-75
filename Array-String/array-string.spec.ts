@@ -5,6 +5,8 @@ import { mergeAlternately } from "./merge-strings-alternately";
 import { productExceptSelf } from "./product-of-array-except-self";
 import { reverseVowels } from "./reverse-vowels-of-a-string";
 import { reverseWords } from "./reverse-words-in-a-string";
+import { increasingTriplet } from "./increasing-triplet-subsequence";
+import { compress } from "./string-compression";
 
 describe("Array/String Leet Code 75 Questions", () => {
   test("should return whether flowers can be planted", () => {
@@ -51,5 +53,31 @@ describe("Array/String Leet Code 75 Questions", () => {
     expect(reverseWords("the sky is blue")).toBe("blue is sky the");
     expect(reverseWords("  hello world  ")).toBe("world hello");
     expect(reverseWords("a good   example")).toBe("example good a");
+  });
+  test("should return whether increasing triplet subsequence exists", () => {
+    expect(increasingTriplet([1, 2, 3, 4, 5])).toBe(true);
+    expect(increasingTriplet([5, 4, 3, 2, 1])).toBe(false);
+    expect(increasingTriplet([2, 1, 5, 0, 4, 6])).toBe(true);
+  });
+  test("should compress string", () => {
+    expect(compress(["a", "a", "b", "b", "c", "c", "c"])).toBe(6);
+    expect(compress(["a"])).toBe(1);
+    expect(
+      compress([
+        "a",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+        "b",
+      ])
+    ).toBe(4);
   });
 });
